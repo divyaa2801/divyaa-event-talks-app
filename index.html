@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Eclipse Countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Solar Eclipse Countdown</h1>
+            <p>The next total solar eclipse is coming!</p>
+        </header>
+
+        <section id="countdown-section">
+            <h2>Next Eclipse In:</h2>
+            <div id="countdown">
+                <div><span id="days"></span> Days</div>
+                <div><span id="hours"></span> Hours</div>
+                <div><span id="minutes"></span> Minutes</div>
+                <div><span id="seconds"></span> Seconds</div>
+            </div>
+        </section>
+
+        <section id="eclipses-section">
+            <h2>Upcoming Solar Eclipses</h2>
+            <ul id="eclipse-list">
+            </ul>
+        </section>
+
+        <section id="map-section">
+            <h2>Eclipse Path Map</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://svs.gsfc.nasa.gov/vis/a030000/a030800/a030877/maps/goes-16-abi-2024-04-08-2030-utc-transparent-and-static-eclipse-umbra-and-penumbra-map-no-labels-1080p.html"
+                    width="100%" 
+                    height="450" 
+                    frameborder="0" 
+                    scrolling="no">
+                </iframe>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
